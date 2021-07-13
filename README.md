@@ -1,6 +1,7 @@
+
 # turkpinapi
-Not : Bu sınıf Turkpin geliştiricileri tarafından yazılmamıştır. Gayri resmi bir çalışmadır.
-Projelerinizde kullanırken lütfen bunu göz önünde bulundurunuz.
+**Not : Bu sınıf Turkpin geliştiricileri tarafından yazılmamıştır. Gayri resmi bir çalışmadır.
+Projelerinizde kullanırken lütfen bunu göz önünde bulundurunuz.**
 
 
 Bu sınıf sayesinde PHP ile Turkpin API kullanabileceksiniz.
