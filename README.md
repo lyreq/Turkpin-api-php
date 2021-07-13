@@ -1,13 +1,24 @@
 
 # turkpinapi
-**Not : Bu sınıf Turkpin geliştiricileri tarafından yazılmamıştır. Gayri resmi bir çalışmadır.
-Projelerinizde kullanırken lütfen bunu göz önünde bulundurunuz.**
 
+## ****Not : Bu sınıf Turkpin geliştiricileri tarafından yazılmamıştır. Gayri resmi bir çalışmadır. Projelerinizde kullanırken lütfen bunu göz önünde bulundurunuz.***
+
+
+
+Turkpin.com API sistemini kullanarak satış yapmanız için, aktif bir bayi hesabınız ve bu hesaba API kullanım yetkisi almış olmanız gerekmektedir.
+
+# Test sistemini kullanabilmek için test bilgileri ile istek göndermek gerekir, aksi halde kullanıcı bulunamadı hatası alırsınız !
+
+## Test Kullanıcı: api@turkpin.net
+
+## Test Şifre: @.nwjExrK4U5b_S@y
+**# Test sistemini kullanabilmek için sunucunuzun IP adresini [integration@turkpin.com](mailto:integration@turkpin.com) adresine mail olarak gönderin.**
+Test sistemini sizin sunucunuzda aktif edeceklerdir. Test işlemlerini local sunucunuzda yapmak istiyorsanız , kendi ip adresinizi göndermeniz yeterli olacaktır. Ayriyeten Turkpin'in kendi dokümantasyonlarına da https://dev.turkpin.com/view/3051588/TVza8YYA buradan ulaşabilirsiniz.
 
 Bu sınıf sayesinde PHP ile Turkpin API kullanabileceksiniz.
 
-Aşağıdaki aynı bilgileri kendime ait blog sitemde de bulabilirsiniz.
-https://yasintimur.site/post/php-ile-turkpin-api-kullanimi-9.
+Nasıl kullanacağınız hakkındaki buradaki aynı bilgileri
+https://yasintimur.site/post/php-ile-turkpin-api-kullanimi-9 adresinde de görebilirsiniz. Benim blog sitemdir.
 
 iletişim adresim : infoyasintimur@gmail.com
 
@@ -121,3 +132,8 @@ Bu API metodu üyeliğinizdeki bakiyenizi listelemeye yarar. Fonksiyonu kullanı
 
 
     
+
+## **Önemli not*
+## Eğer işlemleri gerçek ortamda değil de test hesabında yapacaksanız Turkpin.php dosyamızda gönderilecek post adresini https://www.turkpin.net/api.php olarak değiştirmelisiniz. Eğer gerçek ortamda işlemleri gerçekleştirecekseniz Turkpin.php dosyamızda gönderilecek post adresini https://www.turkpin.com/api.php yapmalısınız
+
+.
