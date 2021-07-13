@@ -13,7 +13,7 @@ Turkpin.com API sistemini kullanarak satış yapmanız için, aktif bir bayi hes
 
 ## Test Şifre: @.nwjExrK4U5b_S@y
 **# Test sistemini kullanabilmek için sunucunuzun IP adresini [integration@turkpin.com](mailto:integration@turkpin.com) adresine mail olarak gönderin.**
-Test sistemini sizin sunucunuzda aktif edeceklerdir. Test işlemlerini local sunucunuzda yapmak istiyorsanız , kendi ip adresinizi göndermeniz yeterli olacaktır. Ayriyeten Turkpin'in kendi dokümantasyonlarına da https://dev.turkpin.com/view/3051588/TVza8YYA buradan ulaşabilirsiniz.
+Test sistemini sizin sunucunuzda aktif edeceklerdir. Test işlemlerini local sunucunuzda yapmak istiyorsanız , kendi ip adresinizi göndermeniz yeterli olacaktır. Ayriyeten Turkpin'in kendi dokümantasyonlarına da https://dev.turkpin.com/view/3051588/TVza8YYA adresinden ulaşabilirsiniz.
 
 Bu sınıf sayesinde PHP ile Turkpin API kullanabileceksiniz.
 
