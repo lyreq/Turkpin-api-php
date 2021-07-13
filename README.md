@@ -6,8 +6,8 @@ Projelerinizde kullanırken lütfen bunu göz önünde bulundurunuz.**
 
 Bu sınıf sayesinde PHP ile Turkpin API kullanabileceksiniz.
 
-Nasıl kullanacağınız hakkındaki daha detaylı bilgi için
-https://yasintimur.site/post/php-ile-turkpin-api-kullanimi-9 adresine gidebilirsiniz.
+Aşağıdaki aynı bilgileri kendime ait blog sitemde de bulabilirsiniz.
+https://yasintimur.site/post/php-ile-turkpin-api-kullanimi-9.
 
 iletişim adresim : infoyasintimur@gmail.com
 
