@@ -7,7 +7,15 @@ class TurkPin
 {
     public $kid;
     public $pw;
-
+    
+    /**
+     * __construct
+     *
+     * @param  mixed $kid
+     * @param  mixed $pw
+     * @param  mixed $error
+     * @return void
+     */
     public function __construct($kid, $pw, $error = true)
     {
         $this->kid = $kid;
@@ -16,14 +24,22 @@ class TurkPin
 
         if ($this->error == false) {
             error_reporting(0);
-        }
+        }        
+        /**
+         * curl
+         *
+         * @param  mixed $xml_data
+         * @return void
+         */
         function curl($xml_data)
         {
+
+            
 
             $curl = curl_init();
 
             curl_setopt_array($curl, array(
-                CURLOPT_URL => 'https://www.turkpin.net/api.php',
+                CURLOPT_URL => 'http://www.turkpin.net/api.php',
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING => '',
                 CURLOPT_MAXREDIRS => 10,
@@ -39,7 +55,13 @@ class TurkPin
             curl_close($curl);
             return $response;
         }
-
+        
+        /**
+         * xml2array
+         *
+         * @param  mixed $xml_data
+         * @return void
+         */
         function xml2array($xml_data)
         {
             $xml = simplexml_load_string($xml_data, "SimpleXMLElement", LIBXML_NOCDATA);
@@ -48,7 +70,12 @@ class TurkPin
 
             return $array;
         }
-    }
+    }    
+    /**
+     * girisKontrol
+     *
+     * @return void
+     */
     public function girisKontrol()
     {
 
@@ -80,7 +107,13 @@ class TurkPin
 
         }
 
-    }
+    }    
+    /**
+     * goldOyunListesi
+     *
+     * @param  mixed $goldTipi
+     * @return void
+     */
     public function goldOyunListesi($goldTipi = 1)
     {
         $xml_data = '
@@ -98,7 +131,14 @@ class TurkPin
         return $array;
 
     }
-
+    
+    /**
+     * sunucuListesi
+     *
+     * @param  mixed $oyunKodu
+     * @param  mixed $goldTipi
+     * @return void
+     */
     public function sunucuListesi($oyunKodu, $goldTipi = 1)
     {
         $xml_data = '
@@ -117,7 +157,17 @@ class TurkPin
 
         return $array;
     }
-
+    
+    /**
+     * siparisYarat
+     *
+     * @param  mixed $oyunKodu
+     * @param  mixed $urunKodu
+     * @param  mixed $adet
+     * @param  mixed $character
+     * @param  mixed $goldTipi
+     * @return void
+     */
     public function siparisYarat($oyunKodu, $urunKodu, $adet, $character, $goldTipi = 1)
     {
         $xml_data = '
@@ -139,7 +189,13 @@ class TurkPin
         return $array;
 
     }
-
+    
+    /**
+     * siparisDurumu
+     *
+     * @param  mixed $siparisNo
+     * @return void
+     */
     public function siparisDurumu($siparisNo)
     {
         $xml_data = '
@@ -156,7 +212,12 @@ class TurkPin
         $array = xml2array($content);
         return $array;
 
-    }
+    }    
+    /**
+     * epinOyunListesi
+     *
+     * @return void
+     */
     public function epinOyunListesi()
     {
         $xml_data = '
@@ -172,7 +233,13 @@ class TurkPin
         $array = xml2array($content);
         return $array;
     }
-
+    
+    /**
+     * epinUrunleri
+     *
+     * @param  mixed $oyunKodu
+     * @return void
+     */
     public function epinUrunleri($oyunKodu)
     {
         $xml_data = '
@@ -189,7 +256,16 @@ class TurkPin
         $array = xml2array($content);
 
         return $array;
-    }
+    }    
+    /**
+     * epinSiparisYarat
+     *
+     * @param  mixed $oyunKodu
+     * @param  mixed $urunKodu
+     * @param  mixed $sipadet
+     * @param  mixed $karakterAdi
+     * @return void
+     */
     public function epinSiparisYarat($oyunKodu, $urunKodu, $sipadet, $karakterAdi)
     {
         $xml_data = '
@@ -211,7 +287,12 @@ class TurkPin
         return $array;
 
     }
-
+    
+    /**
+     * yukletOyunListesi
+     *
+     * @return void
+     */
     public function yukletOyunListesi()
     {
         $xml_data = '
@@ -227,7 +308,13 @@ class TurkPin
         $array = xml2array($content);
         return $array;
     }
-
+    
+    /**
+     * yukletUrunListesi
+     *
+     * @param  mixed $oyunKodu
+     * @return void
+     */
     public function yukletUrunListesi($oyunKodu)
     {
         $xml_data = '
@@ -245,7 +332,16 @@ class TurkPin
 
         return $array;
     }
-
+    
+    /**
+     * yukletSiparisYarat
+     *
+     * @param  mixed $oyunKodu
+     * @param  mixed $urunKodu
+     * @param  mixed $adet
+     * @param  mixed $aciklama
+     * @return void
+     */
     public function yukletSiparisYarat($oyunKodu, $urunKodu, $adet, $aciklama)
     {
         $xml_data = '
@@ -265,7 +361,12 @@ class TurkPin
         $array = xml2array($content);
 
         return $array;
-    }
+    }    
+    /**
+     * odemeTipleri
+     *
+     * @return void
+     */
     public function odemeTipleri()
     {
         $xml_data = '
@@ -281,7 +382,13 @@ class TurkPin
         $array = xml2array($content);
 
         return $array;
-    }
+    }    
+    /**
+     * bankaListesi
+     *
+     * @param  mixed $paymentMethod
+     * @return void
+     */
     public function bankaListesi($paymentMethod)
     {
         $xml_data = '
@@ -298,7 +405,18 @@ class TurkPin
         $array = xml2array($content);
 
         return $array;
-    }
+    }    
+    /**
+     * bildirimGonder
+     *
+     * @param  mixed $paymentMethod
+     * @param  mixed $bank_id
+     * @param  mixed $amount
+     * @param  mixed $sender_name
+     * @param  mixed $required
+     * @param  mixed $date_of_payment
+     * @return void
+     */
     public function bildirimGonder($paymentMethod, $bank_id, $amount, $sender_name, $required, $date_of_payment)
     {
         $xml_data = '
@@ -320,7 +438,13 @@ class TurkPin
         $array = xml2array($content);
 
         return $array;
-    }
+    }    
+    /**
+     * bildirimDurumu
+     *
+     * @param  mixed $bildirim_id
+     * @return void
+     */
     public function bildirimDurumu($bildirim_id)
     {
         $xml_data = '
@@ -337,7 +461,12 @@ class TurkPin
         $array = xml2array($content);
 
         return $array;
-    }
+    }    
+    /**
+     * balance
+     *
+     * @return void
+     */
     public function balance()
     {
         $xml_data = '
