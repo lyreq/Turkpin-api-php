@@ -18,7 +18,7 @@ Test sistemini sizin sunucunuzda aktif edeceklerdir. Test işlemlerini local sun
 Bu sınıf sayesinde PHP ile Turkpin API kullanabileceksiniz.
 
 Nasıl kullanacağınız hakkındaki buradaki aynı bilgileri
-https://yasintimur.site/post/php-ile-turkpin-api-kullanimi-9 adresinde de görebilirsiniz. Benim blog sitemdir.
+https://yasintimur.com/post/php-ile-turkpin-api-kullanimi-9 adresinde de görebilirsiniz. Benim blog sitemdir.
 
 iletişim adresim : infoyasintimur@gmail.com
 
